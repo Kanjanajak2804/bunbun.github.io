@@ -33,6 +33,9 @@
             function decrease(){
                 $("#counter").text(parseInt($("#counter").text())-1);
             }
+            function reset(){
+                $("#counter").text("0");
+            }
             alert("This is in script");
             
         </script>
@@ -44,6 +47,7 @@
             <h2 id="counter">0</h2>
             <div>
             <button onclick = "increase()"class = "btn btn-primary">+1</button>
+            <button onclick="reset()"class = "btn btn-primary">reset</button>
             <button onclick = "decrease()"class = "btn btn-primary">-1</button>
         </div>
         </div>
